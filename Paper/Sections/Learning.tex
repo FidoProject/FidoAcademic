@@ -99,7 +99,6 @@ The likelihood that an action $\hat{a}$ will be chosen from a set of $n$ actions
 $T$ is the temperature, or exploration level.
 As $T$ approaches infinity, a random action is chosen.
 As $T$ tends toward 0, the best action is chosen.
-Fido keeps $T$ at a constant value around $T \approx 0.15$ throughout its lifetime to encourage occasional, continued exploration.
 
 $T$ is set proportional to Fido's uncertainty value, so that Fido rapidly explores when it is first initialized or is being retrained. This allows Fido to converge on tasks in fewer learning iterations than if $T$ were set as a constant. As Fido learns a task, $T$ will approach 0. This means that Fido will accurately perform a task when sure of its actions, increasing Fido's average reward over other systems.
 
